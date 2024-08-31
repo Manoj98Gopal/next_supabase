@@ -3,6 +3,7 @@
 import React from "react";
 import ToolBar from "./ToolBar";
 import PostContent from "./PostContent";
+import TemplateSelecter from "./TemplateSelecter";
 
 function Layout() {
   return (
@@ -10,8 +11,14 @@ function Layout() {
       <div className="fixed top-0 left-0 right-0 z-10">
         <ToolBar />
       </div>
-      <div className="w-full h-[94vh] overflow-y-auto flex justify-center items-center mt-[40px]">
-        <PostContent />
+
+      <div className="h-[94vh] mt-[40px] overflow-hidden flex flex-row justify-center">
+        <div className="w-[80%] flex justify-center items-center">
+          <PostContent />
+        </div>
+        <div className="w-[20%]">
+          <TemplateSelecter />
+        </div>
       </div>
     </div>
   );

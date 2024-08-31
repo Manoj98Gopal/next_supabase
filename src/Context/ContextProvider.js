@@ -10,6 +10,18 @@ const INITIAL_STATE = {
     height: 1350,
   },
   zoom: "50%",
+  templateStyle: {
+    background: "/bgImage.png",
+    title: {
+      fontSize: "130px",
+      fontColor: "#976ADE",
+      fontWeight: "extrabold",
+      dropShadowValue: "4.663px_1.999px_0px_rgba(0,0,0,0.9)",
+      letterSpacing: "5.2px",
+      lineHeight: "91%",
+      marginTop: "160px",
+    },
+  },
 };
 
 const globalReducer = (state, action) => {
@@ -23,6 +35,11 @@ const globalReducer = (state, action) => {
       return {
         ...state,
         zoom: action.payload,
+      };
+    case "templateStyle":
+      return {
+        ...state,
+        templateStyle: action.payload,
       };
     default:
       return state;

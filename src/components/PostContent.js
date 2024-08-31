@@ -7,6 +7,7 @@ function PostContent() {
 
   const { width, height } = globalState.postSize;
   const zoom = globalState.zoom;
+  const { background, title } = globalState.templateStyle;
 
   return (
     <div
@@ -17,13 +18,13 @@ function PostContent() {
         transform: `scale(${parseFloat(zoom) / 100})`,
         transformOrigin: "center",
         transition: "width 0.3s ease, height 0.3s ease, transform 0.3s ease",
-        backgroundImage: "url('/bgImage.png')",
+        backgroundImage: `url(${background})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <PostTitle />
+      <PostTitle {...title} />
     </div>
   );
 }

@@ -1,8 +1,24 @@
 import React from "react";
 
-function PostTitle() {
+function PostTitle({
+  fontSize,
+  fontColor,
+  fontWeight,
+  dropShadowValue,
+  letterSpacing,
+  lineHeight,
+  marginTop,
+}) {
   return (
-    <div className="text-center text-[130px] font-extrabold text-[#976ADE] drop-shadow-[4.663px_1.999px_0px_rgba(0,0,0,0.9)] font-poppins tracking-[5.2px] leading-[91%] mt-[160px]">
+    <div
+      className={`text-center font-${fontWeight} drop-shadow-[${dropShadowValue}] font-poppins tracking-[${letterSpacing}] leading-[${lineHeight}] mt-[${marginTop}] `}
+      style={{
+        color: fontColor,
+        fontSize: fontSize,
+        transition: "all 0.3s ease",
+
+      }}
+    >
       Product Manager
     </div>
   );
