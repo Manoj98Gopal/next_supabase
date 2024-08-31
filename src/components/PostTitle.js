@@ -4,19 +4,25 @@ function PostTitle({
   fontSize,
   fontColor,
   fontWeight,
-  dropShadowValue,
+  textShadow,
   letterSpacing,
   lineHeight,
   marginTop,
+  fontFamily,
 }) {
   return (
     <div
-      className={`text-center font-${fontWeight} drop-shadow-[${dropShadowValue}] font-poppins tracking-[${letterSpacing}] leading-[${lineHeight}] mt-[${marginTop}] `}
+      className={`text-center font-poppins `}
       style={{
         color: fontColor,
         fontSize: fontSize,
+        fontWeight: fontWeight,
+        lineHeight: lineHeight,
         transition: "all 0.3s ease",
-
+        marginTop: marginTop,
+        letterSpacing: letterSpacing,
+        textShadow: textShadow,
+        fontFamily: fontFamily,
       }}
     >
       Product Manager

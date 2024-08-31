@@ -11,16 +11,30 @@ const INITIAL_STATE = {
   },
   zoom: "50%",
   templateStyle: {
-    background: "/bgImage.png",
+    background: "/template1.png",
     title: {
       fontSize: "130px",
       fontColor: "#976ADE",
-      fontWeight: "extrabold",
-      dropShadowValue: "4.663px_1.999px_0px_rgba(0,0,0,0.9)",
+      fontWeight: 800,
+      textShadow: "4.663px 1.999px 0px rgba(0, 0, 0, 0.90)",
       letterSpacing: "5.2px",
       lineHeight: "91%",
       marginTop: "160px",
+      fontFamily: "Poppins",
     },
+    subTitle: {
+      marginTop: "80px",
+      fontFamily: "Raleway",
+      fontSize: "64px",
+      fontWeight: 700,
+      lineHeight: "104%",
+      borderData: "2.5px solid #141414",
+      borderRadius: "27px",
+      background: "#FBDC6F",
+      padding: "15px 40px",
+      color: "#141414",
+    },
+    cardBorderColor: "#976ADE",
   },
 };
 
