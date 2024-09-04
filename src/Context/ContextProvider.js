@@ -4,6 +4,8 @@ import React, { createContext, useReducer } from "react";
 
 export const MyContext = createContext();
 
+const bg = "https://res.cloudinary.com/kalibre-ai/image/upload/v1725259395/SocialMediaPosts/template1_lnayod.png"
+
 const INITIAL_STATE = {
   postSize: {
     width: 1080,
@@ -11,7 +13,7 @@ const INITIAL_STATE = {
   },
   zoom: "50%",
   templateStyle: {
-    background: "/template1.png",
+    background: bg,
     title: {
       fontSize: "130px",
       fontColor: "#976ADE",

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function PostSubtitle({
   marginTop,
@@ -10,14 +10,12 @@ function PostSubtitle({
   borderRadius,
   background,
   padding,
-  color,
+  color
 }) {
   return (
-    <div className="text-center">
+    <div className="flex items-center justify-center mt-20" >
       <div
         style={{
-          textAlign: "center",
-          marginTop: marginTop,
           fontFamily: fontFamily,
           fontSize: fontSize,
           fontWeight: fontWeight,
@@ -26,9 +24,9 @@ function PostSubtitle({
           borderRadius: borderRadius,
           background: background,
           padding: padding,
-          display: "inline-block",
-          transition: "all 0.3s ease",
           color: color,
+          display: 'block',
+          transition: 'all 0.3s ease',
         }}
       >
         Jobs in Bengaluru
